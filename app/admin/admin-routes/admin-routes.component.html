@@ -1,0 +1,116 @@
+<div class="navbar navbar-inverse admin-dashboard">
+    <div class="container-fluid">
+        <div class="navbar-header col-lg-3 col-md-3">
+            
+            <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/images/logo.png"></a>
+        </div>
+        <div class="header-top-div col-lg-9 col-md-9">
+            <div class="message-of-day hidden-xs hidden-sm">
+                <strong>Message of the day :</strong> <span> Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</span>
+            </div>
+            <ul class="nav navbar-nav navbar-right">         
+                <li class="dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" role="button"> <i class="fa fa-bell fa-lg"></i> <sup class="badge">02</sup></a>
+                    <ul class="dropdown-menu notify-drop">
+                        <div class="notify-drop-title">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6">Bildirimler (<b>2</b>)</div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 text-right"><a class="rIcon allRead" data-placement="bottom" data-tooltip="tooltip" href="javascript:void(0);" title="tümü okundu.">
+                                    <i class="fa fa-dot-circle-o"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="drop-content">
+                            <li>
+                                <div class="col-md-3 col-sm-3 col-xs-3"><div class="notify-img"><img alt="" src="http://placehold.it/45x45"></div></div>
+                                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="javascript:void(0);">Ahmet</a> yorumladı. <a href="javascript:void(0);">Çicek bahçeleri...</a> <a class="rIcon" href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i></a>
+                                    <hr>
+                                    <p class="time">Şimdi</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-3 col-sm-3 col-xs-3"><div class="notify-img"><img alt="" src="http://placehold.it/45x45"></div></div>
+                                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="javascript:void(0);">Ahmet</a> yorumladı. <a href="javascript:void(0);">Çicek bahçeleri...</a> <a class="rIcon" href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i></a>
+                                    <p>Lorem ipsum sit dolor amet consilium.</p>
+                                    <p class="time">1 Saat önce</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-3 col-sm-3 col-xs-3"><div class="notify-img"><img alt="" src="http://placehold.it/45x45"></div></div>
+                                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="javascript:void(0);">Ahmet</a> yorumladı. <a href="javascript:void(0);">Çicek bahçeleri...</a> <a class="rIcon" href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i></a>
+                                    <p>Lorem ipsum sit dolor amet consilium.</p>
+                                    <p class="time">29 Dakika önce</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-3 col-sm-3 col-xs-3"><div class="notify-img"><img alt="" src="http://placehold.it/45x45"></div></div>
+                                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="javascript:void(0);">Ahmet</a> yorumladı. <a href="javascript:void(0);">Çicek bahçeleri...</a> <a class="rIcon" href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i></a>
+                                    <p>Lorem ipsum sit dolor amet consilium.</p>
+                                    <p class="time">Dün 13:18</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-3 col-sm-3 col-xs-3"><div class="notify-img"><img alt="" src="http://placehold.it/45x45"></div></div>
+                                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="javascript:void(0);">Ahmet</a> yorumladı. <a href="javascript:void(0);">Çicek bahçeleri...</a> <a class="rIcon" href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i></a>
+                                    <p>Lorem ipsum sit dolor amet consilium.</p>
+                                    <p class="time">2 Hafta önce</p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="notify-drop-footer text-center">
+                            <a href="javascript:void(0);"><i class="fa fa-eye"></i> Tümünü Göster</a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"><div class="avatar"> <img src="http://i.stack.imgur.com/Dj7eP.jpg"> </div> <span class="hidden-xs">{{loggedUserName}}</span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="g-account-menu" role="menu">
+                        <li><a href="javascript:void(0);"><i class="fa fa-user-secret"></i> My Profile</a></li>
+                        <li>
+
+
+
+                        	<a (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
+
+                       	</li>
+                    </ul>
+                </li>                
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<div class="sidemenu leftMenu admin-sidemenu">
+    <div class="hamburger close"><span></span><span></span><span></span></div>
+    <ul class="leftMenuList">
+        <li><a href="javascript:void(0);"><i aria-hidden="true" class="fa fa-tachometer"></i> <span>Dashboard </span></a></li>
+        <li class="active"><a (click)="showOffice()"><i aria-hidden="true" class="fa fa-building-o"></i> <span></span></a></li>
+        <li tabindex="0"><a (click)="showMac()"><i aria-hidden="true" class="fa fa-laptop"></i> <span>Manage MAC</span></a></li>
+        <li><a href="javascript:void(0);" (click)="showAgent()"><i aria-hidden="true" class="fa fa-user-o"></i> <span>Manage Agent</span></a></li>
+        <li><a href="javascript:void(0);"><i aria-hidden="true" class="fa fa-pencil-square-o"></i> <span>Manage Request Off</span></a></li>
+        <li><a href="javascript:void(0);"><i aria-hidden="true" class="fa fa-thumb-tack"></i> <span>Message of the Day</span></a></li>
+    </ul>
+</div>
+
+
+<div class="block-ui-wrapper block-ui-main  hidden">
+  <!---->
+  <!----><!----><div class="block-ui-template">
+	<div class="text-center">
+		
+		<img src="assets/images/New_Car_Loading.gif">
+	</div>
+	<div class="manage-user">
+		<h2 class="text-center" style="color:white;">Please wait...</h2>
+	</div>
+</div>
+<!---->
+</div>
+<div class="main admin-main">
+
+    <router-outlet></router-outlet>
+	
+</div>
